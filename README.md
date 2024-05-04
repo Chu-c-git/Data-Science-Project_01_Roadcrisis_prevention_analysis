@@ -3,34 +3,33 @@
 ![image](https://github.com/Chu-c-git/Data-Science-Project_01_Roadcrisis_prevention_analysis/assets/141092596/a99e1bde-9662-40a7-81cf-85b253d76c74)
 
 ## Introduction
-This project aimed to find important cause of road crisis and to utilize various open data to predict the happening of road crisis.
+This analysis project sought to identify the key contributing factors that lead to road crises, and make potential risk map for prevention. By examining architectural and urban planning aspects, the project raised a series of critical questions. To address these questions, various open data sources were utilized. Additionally, the project aimed to develop predictive models to anticipate the occurrence of road crises.
+![image](https://github.com/Chu-c-git/Data-Science-Project_01_Roadcrisis_prevention_analysis/blob/db4b0eca22466a3820acd0cfcd255d5214f0f822/Visualization/Case_monthly_gif.gif)
 
-- Open data crawler
-- Data Preprocess: list 10+ open data
-- Training data
-- Prediction: Time Series & Spatial Prediction
-- Visualization: Tableau
+## Feature
 
-  
+- **Open data ETL** | Integrated 23 datasets from 4 opendata platform into different training features and analysis. The format of datasets includes csv, xml, shp, geojson and geopackage. A Selenium crawler to collect building cases information wich used to analyze the possibility that sinkhole case happened next to a building case.
+- **Data preprocess** | Process spatial and time-series training features based on different geographic scale. (eg. Case location / Villages / 5m Hexes across Taipei City)
+- **Model training** | Using XGBoost and LightGBM to find out important features.
+- **Visualization** | Using Tableau, QGIS and also matplotlib to demonstrate important findings.
 
-Our main goal is to create a comprehensive data visualization tool to assist in Taipei City policy decisions. This was achieved through the first version of the Taipei City Dashboard, which displayed a mix of internal and open data, seamlessly blending statistical and geographical data.
-
-Fast forward to mid-2023, as Taipei City’s open data ecosystem matured and expanded, our vision gradually expanded as well. We aimed not only to aid policy decisions but also to keep citizens informed about the important statistics of their city. Given the effectiveness of this tool, we also hoped to publicize the codebase for this project so that any relevant organization could easily create a similar data visualization tool of their own.
-
-Our dashboard, made yours.
-
-Based on the above vision, we decided to begin development on Taipei City Dashboard 2.0. Unlike its predecessor, Taipei City Dashboard 2.0 will be a public platform instead of an internal tool. The codebase for Taipei City Dashboard will also be open-sourced, inviting all interested parties to participate in the development of this platform.
-
-We have since released Taipei City Dashboard 2.0 to the general public. From now on, you will be able to suggest features and changes to Taipei City Dashboard and develop the platform alongside us. We are excited for you to join Taipei City Dashboard’s journey!
-
-Please refer to the docs for the [Chinese Version](https://tuic.gov.taipei/documentation/front-end/introduction) (and click on the "switch languages" icon in the top right corner).
-
-[Official Site](https://citydashboard.taipei) | [License](https://github.com/tpe-doit/Taipei-City-Dashboard/blob/main/LICENSE) | [Code of Conduct](https://github.com/tpe-doit/Taipei-City-Dashboard/blob/main/.github/CODE_OF_CONDUCT.md) | [Contribution Guide](https://tuic.gov.taipei/documentation/front-end/contribution-overview)
+[Crawler Demo](https://reurl.cc/0v6X1Y) | [Open data List](https://github.com/Chu-c-git/Data-Science-Project_01_Roadcrisis_prevention_analysis/blob/main/Opendata_list.xlsx) |
 
 ## Quick Start
-
-Please refer to the [Docs](https://tuic.gov.taipei/documentation/front-end/project-setup) for the quick start guide.
+1. install python 3.X and anaconda
+2. create environment using anaconda and [Yaml file](https://github.com/Chu-c-git/Data-Science-Project_01_Roadcrisis_prevention_analysis/blob/main/practice_02_environment.yml).
+   ```
+   conda env create --file environment_name.yaml
+   ```
+4. Run related ipynb to make your own training data.
 
 ## Tools
-
-Check out the complete documentation for Taipei City Dashboard [here](https://tuic.gov.taipei/documentation).
+| Tool | Description |
+|---|---|
+| Selenium | Automated web information crawling |
+| Dask | Parallel processing for Python |
+| Geopandas | Geographic data analysis in Python |
+| XGBoost | Scalable and efficient gradient boosting machine learning |
+| LightGBM | Gradient boosting machine learning with high performance |
+| Optuna | Hyperparameter optimization library for machine learning |
+| QGIS | Spatial visualization |

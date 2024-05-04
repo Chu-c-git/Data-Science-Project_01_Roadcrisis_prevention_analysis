@@ -4,7 +4,7 @@
 
 ## Introduction
 This analysis project sought to identify the key contributing factors that lead to road crises, and make potential risk map for prevention. By examining architectural and urban planning aspects, the project raised a series of critical questions. To address these questions, various open data sources were utilized. Additionally, the project aimed to develop predictive models to anticipate the occurrence of road crises.
-![image][(https://github.com/Chu-c-git/Data-Science-Project_01_Roadcrisis_prevention_analysis/blob/db4b0eca22466a3820acd0cfcd255d5214f0f822/Visualization/Case_monthly_gif.gif)](https://github.com/Chu-c-git/Data-Science-Project_01_Roadcrisis_prevention_analysis/blob/main/Visualization/Hotspot_map.gif)
+![image](https://github.com/Chu-c-git/Data-Science-Project_01_Roadcrisis_prevention_analysis/blob/main/Visualization/Hotspot_map.gif)
 
 ## Feature
 
